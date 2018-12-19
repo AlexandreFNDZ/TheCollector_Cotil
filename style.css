@@ -1,0 +1,332 @@
+body {
+    background-image: linear-gradient(lightblue, white, white);
+    background-repeat: no-repeat; 
+}
+
+.fonteCollector {
+    font-family: "Bangers", cursive !important;
+}
+
+/* Barra de Navegação */
+
+#navTotal {
+    border-bottom: solid black 1px;
+    box-shadow: 0rem 0.03rem 0.1rem 0.1rem black;
+}
+
+#navPadrao {
+    z-index: 2;
+}
+
+#navTotal:hover #navPadrao {
+    background-color: rgb(137, 196, 255);
+    opacity: 1;
+}
+
+#navPadrao2{
+    margin-top: 78.1px;
+    border-bottom: solid black 1px;
+    box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+
+    z-index: 1;
+}
+
+#navTotal:hover #navPadrao2 {
+    /* box-shadow: 0rem 0.03rem 0.8rem black; */
+
+    background-color: rgb(137, 196, 255);
+    opacity: 1;
+}
+
+.navTransp {
+    background-color: rgba(137, 196, 255, 0.4);
+
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.navNormal {
+    background-color: rgb(137, 196, 255);
+
+    transition: 1s;
+}
+
+.itensMenu a {
+    color: black;
+    font-family: "Bangers", cursive;
+    font-size: 1.2rem;
+
+    letter-spacing: 1.1px;
+}
+
+.itensMenu a:hover {
+    color: white;
+    /* color: rgb(255, 208, 0); */
+    text-shadow: 0.15rem 0.15rem 0.3rem black;
+}
+
+nav .form-control {
+    background-color: white;
+
+	border-color: black;    
+    border-radius: 0.5rem;
+
+    margin-right: 0.15rem;
+}
+
+nav .btn-warning {
+    border: solid black 1px;
+}
+
+nav .btn-warning:hover {
+    background-color: rgb(255, 208, 0);
+
+    border: solid black 1px;
+}
+
+.dropdown-menu a:hover {
+    /* background-color: rgb(122, 238, 238); */
+    background-color: rgb(137, 196, 255);
+
+    text-shadow: 0 0 0 black;
+
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+nav .itemMenu {
+    font-size: 2.05rem;
+
+    margin: -5px;
+    padding-top: 6.5px;
+
+    align-items: center;
+
+    border: solid black 1px;
+    border-radius: 15px;
+}
+
+nav .logo {
+    height: 50px;
+}
+
+.textLogin a {
+    color: black;
+}
+
+.iconsMenu {
+    font-size: 30px;
+    color: dodgerblue;
+    text-shadow: 1px 0.5px 0.1px white;
+}
+
+@media (max-width: 400px) {
+    .iconsMenu {
+        font-size: 20px;
+    }
+}
+
+.menuProdutos {
+    border-left: solid dodgerblue 1px;
+    border-right: solid dodgerblue 1px;
+}
+
+
+/* Carousel de Imagens/Noticias */
+
+.blankDiv {
+    height: 75px;
+}
+
+@media (min-width: 992px) {
+    .blankDiv {
+        height: 122px;
+    }
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.tituloCarousel {
+    background-color: rgba(102, 102, 102, 0.7);
+    text-shadow: .1rem .1rem .1rem black;
+    padding: 0;
+    border-radius: 5rem;
+}
+
+.slide1, .slide2, .slide3, .slide4 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide1 {
+    background-image: url(Images/slide1-ok.jpg);
+}
+
+.slide2 {
+    background-image: url(Images/slide2-ok.jpg);
+}
+
+.slide3 {
+    background-image: url(Images/slide3-ok.jpg);
+}
+
+.slide4 {
+    background-image: url(Images/slide4-ok.jpg);
+}
+
+
+/* Cards de Informação (Abaixo do Carousel) */
+
+.info {
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoText {
+    font-size: 12px;
+}
+
+.infoIcons {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.infoCards {
+    width: 95%;
+    padding: 7px 5px 7px 5px;
+    border: solid dodgerblue 1px;
+    border-radius: 10px;
+}
+
+
+/* Jumbotron (Produtos) */
+
+.jumbotron {
+    background-color: lightyellow !important;
+    border-radius: 10px !important;
+
+    border: solid black 2px;
+}
+
+
+/* Barra de Destaque dos Produtos */
+
+.textDestaque {
+    font-family: "Bangers", cursive;
+    letter-spacing: 1px;
+
+    color: black;
+    text-shadow: .09rem .09rem .09rem white; 
+}
+
+.textBlue {
+    color: dodgerblue;
+
+    text-shadow: .09rem .09rem .02rem white; 
+}
+
+.destaqueBox {
+    border: solid black;
+    border-width: 2px 0 2px 0;
+
+    background-color: yellow;
+}
+
+.infoBox {
+    border: solid black;
+    border-width: 1px 0 0 0;
+}
+
+
+/* Informações acima do Rodapé */
+
+.infoRedondo {
+    width: 130px;
+    height: 130px;
+
+    border: solid dodgerblue 2px;
+    border-radius: 50%;
+
+    margin-bottom: 12px;
+    margin-left: 15%;
+
+    font-size: 50px;
+
+    box-shadow: 4px 3px 20px grey;
+
+    background-color: #fff;
+}
+
+.infoTitulo {
+    border-left: solid black 2px;
+
+    padding-left: 10px;
+}
+
+.textBlue span {
+    color: black;
+}
+
+.infoFooter {
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/funky-lines.png);
+    background-repeat: repeat;
+    background-size: 25%;
+
+    border: solid dodgerblue;
+    border-width: 1px 0 1px 0;
+}
+
+
+/* Footer */
+
+.botaoCadastro {
+    margin-top: -15px;
+}
+
+.rodape {
+    box-shadow: 0rem 0.03rem 0.8rem black;
+    background-color: #fff;
+}
+
+.iconesPagamento {
+    font-size: 35px;
+
+    color: dodgerblue;
+}
+
+
+/* Código CSS para a página SOBRE - Jumbotron */
+
+.sobreDiv {
+    border-radius: 20px;
+}
+
+.imageSobre1, .imageSobre2 {
+    height: 300px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imageSobre1 {
+    background-image: url(Images/lojafundo1.JPG);
+}
+
+.imageSobre2 {
+    background-image: url(Images/lojafundo2.JPG);
+}
+
+
+/* Código CSS para a página FAQ - Profile Pictures */
+
+.imgProfile {
+    width: 100px;
+    height: 100px;
+}

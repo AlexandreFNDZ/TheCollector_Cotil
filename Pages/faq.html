@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>FAQ ► TCGS - The Collector Geek Store!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="icon" href="../Images/icon.png" sizes="32x32">
+        <link href="https://fonts.googleapis.com/css?family=Bangers|Josefin+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Bootstrap link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Script menu Transparente -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="navTotal">
+            <nav class="navNormal navbar navbar-expand-lg fixed-top" id="navPadrao">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollector" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon itemMenu"><i class="fa fa-reorder"></i></span>
+                    </button>
+
+                    <!-- Logo do menu -->
+                    <span class="navbar-brand"><a href="../index.html"><img class="logo" src="../Images/logo.png"></a></span>
+
+                    <!-- Ícones de Carrinho de Compras e Perfil para Menu Collapsed -->
+                    <div class="col-3 text-right iconsMenu d-lg-none"><a href="#"><i class="fa fa-user-o mr-1"></i></a><a href="#"><i class="fa fa-shopping-basket ml-1"></i></a></div>
+
+                    <div class="collapse navbar-collapse" id="navbarCollector">
+                        <span></span>
+
+                        <!-- Links para Menu Collapsed -->
+                        <ul class="itensMenu navbar-nav mr-auto ml-lg-4 d-lg-none">
+                            <li class="nav-item"><a class="nav-link active" href="../index.html">HOME</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="menuProdutos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUTOS</a>
+
+                                <div class="dropdown-menu" aria-labelledby="menuProdutos">
+                                    <a class="dropdown-item" href="produtos.html">Chaveiro</a>
+                                    <a class="dropdown-item" href="produtos.html">Funko</a>
+                                    <a class="dropdown-item" href="produtos.html">Mangás</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="produtos.html">Todos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="menuSobre" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOBRE</a>
+                            
+                                <div class="dropdown-menu" aria-labelledby="menuSobre">
+                                    <a class="dropdown-item" href="sobre.html">A loja</a>
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contato.html">CONTATO</a></li>
+                        </ul>
+                        <!-- /Links para Menu Collapsed -->
+
+                        <!-- Search e Login -->
+                        <div class="col-12 col-lg-10">
+                            <form class="form-inline my-2 my-lg-0 pesquisar input-group">
+                                <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-warning input-group-text" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                            <div class="text-right textLogin">Faça o seu <a href="#" data-toggle="modal" data-target="#modalLogin"><small>LOGIN</small></a> ou <a href="#" data-toggle="modal" data-target="#modalCadastrar"><small>CADASTRE-SE</small></a></div>
+                        </div>
+                        <!-- /Search e Login -->
+
+                        <!-- Ícones de Carrinho de Compras e Perfil tela Large -->
+                        <div class="col-2 text-right iconsMenu d-none d-lg-block"><a href="#"><i class="fa fa-user-o mr-1"></i></a><a href="#"><i class="fa fa-shopping-basket ml-1"></i></a></div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Links para Menu tela Large -->
+            <div class="d-none d-lg-block navNormal navbar navbar-expand-lg fixed-top p-0" id="navPadrao2">
+                <div class="container d-flex justify-content-center">
+                    <div class="row">
+                        <ul class="itensMenu navbar-nav mr-auto ml-lg-4 col-12">
+                            <li class="nav-item"><a class="nav-link active" href="../index.html">HOME</a></li>
+                            <div class="menuProdutos d-flex mx-5 px-2">
+                                <li class="nav-item"><a class="nav-link" href="produtos.html">Funko</a></li>
+                                <li class="nav-item"><a class="nav-link" href="produtos.html">Chaveiro</a></li>
+                                <li class="nav-item"><a class="nav-link" href="produtos.html">Mangás</a></li>                            
+                            </div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="menuSobre" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOBRE</a>
+                                
+                                <div class="dropdown-menu" aria-labelledby="menuSobre">
+                                    <a class="dropdown-item" href="sobre.html">A loja</a>
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contato.html">CONTATO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /Links para Menu tela Large -->
+
+        </div>
+
+        <!-- Modal LOGIN -->
+        <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLoginLabel">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputEmail">Usuário/Email</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="usuario@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSenha">Senha</label>
+                                <input type="password" class="form-control" id="inputSenha" placeholder="••••••">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal LOGIN -->
+
+        <!-- Modal CADASTRAR -->
+        <div class="modal fade" id="modalCadastrar" tabindex="-1" role="dialog" aria-labelledby="modalCadastrarLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCadastrarLabel">Cadastrar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputName">Nome Completo</label>
+                                <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Peter Parker">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputApelido">Apelido</label>
+                                <input type="text" class="form-control" id="inputApelido" aria-describedby="emailHelp" placeholder="Spidey">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail2">Email</label>
+                                <input type="email" class="form-control" id="inputEmail2" aria-describedby="emailHelp" placeholder="spider_man@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSenha2">Senha</label>
+                                <input type="password" class="form-control" id="inputSenha2" placeholder="••••••">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSenha3">Confirmar Senha</label>
+                                <input type="password" class="form-control" id="inputSenha3" placeholder="••••••">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal CADASTRAR -->
+        
+        <div class="blankDiv"></div>
+
+        <!-- Label de Conteúdo -->
+        <div class="mt-4 mb-1 destaqueBox pt-2">
+            <div class="container d-block d-lg-flex">
+                <h4 class="textDestaque">► FAQ</h4>
+                <h5 class="d-none d-lg-block ml-4 mr-1">|</h5>
+                <h5 class="textDestaque"><small class="textBlue">Perguntas mais frequentes!</small></h5>
+            </div>
+        </div>
+        <!-- /Label de Conteúdo -->
+
+        <!-- jumbotron do Conteúdo de contato -->
+		<div class="container">
+            <div class="jumbotron py-3 px-5 mx-3">
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img class="d-none d-md-block align-self-center mr-3 imgProfile rounded" src="../Images/Profile/01.jpg" alt="Generic placeholder image">
+                        <div class="media-body text-justify">
+                            <h5 class="mt-0 mb-1">P: O site é confiável?</h5>
+                            Sim! Trabalhamos com as plataformas de pagamento mais seguras e respeitadas do mercado, como PagSeguro e MercadoPago. Além disso, nosso site conta com a segurança SSL que é obrigatória por Lei para todas as lojas online no Brasil, pois criptografa todas as transações efetuadas no site e garante sigilo de todas as informações.
+                        </div>
+                    </li>
+                    <li class="media my-5">
+                        <div class="media-body text-justify">
+                            <h5 class="mt-0 mb-1">P: Após fazer o pedido quanto tempo demora para envia-lo?</h5>
+                            O tempo médio de envio é de até 48h úteis após confirmação de pagamento, onde seu pedido deverá estar com status "Pagamento Aprovado".  Neste prazo não serão contados finais de semana e feriados. Após isso, começa a valer o prazo de entrega informado de acordo com método de envio escolhido!
+                        </div>
+                        <img class="d-none d-md-block align-self-center ml-3 imgProfile rounded" src="../Images/Profile/02.jpg" alt="Generic placeholder image">
+                    </li>
+                    <li class="media my-5">
+                        <img class="d-none d-md-block align-self-center mr-3 imgProfile rounded" src="../Images/Profile/03.jpg" alt="Generic placeholder image">
+                        <div class="media-body text-justify">
+                            <h5 class="mt-0 mb-1">P: Todos pedidos acompanham número de rastreamento?</h5>
+                            Depende! Se o transporte escolhido for os Correios, o código de rastreio será emitido e enviado. Mas se o envio for por transportadora, não será enviado um código, contudo, você poderá rastrear o seu produto normalmente dentro da sua área de cliente e/ou no site da transportadora em questão. Não tem motivo para pânico!
+                        </div>
+                    </li>
+                    <li class="media my-5">
+                        <div class="media-body text-justify">
+                            <h5 class="mt-0 mb-1">P: Quando será entregue meu produto?</h5>
+                            As entregas são efetuadas de segunda a sexta-feira e excepcionalmente aos sábados, em horário comercial. O prazo informado no momento da compra é contado em dias úteis a partir da confirmação de pagamento enviada por e-mail. O processo de entrega pode ser acompanhado por e-mail ou pelo site a agência de transportes com o código de rastreamento.
+                        </div>
+                        <img class="d-none d-md-block align-self-center ml-3 imgProfile rounded" src="../Images/Profile/04.jpg" alt="Generic placeholder image">
+                    </li>
+                    <li class="media my-5">
+                        <img class="d-none d-md-block align-self-center mr-3 imgProfile rounded" src="../Images/Profile/05.jpg" alt="Generic placeholder image">
+                        <div class="media-body text-justify">
+                            <h5 class="mt-0 mb-1">P: Gostaria de trocar ou devolver um produto, o que devo fazer?</h5>
+                            Você tem até 7 dias a partir da data de recebimento do produto para sollicitar a troca, independente do motivo. Entre em contato conosco <a href="contato.html" style="color: black;">clicando aqui</a> e informe o motivo da troca. Você será orientado pela nossa equipe como deve proceder.
+                        </div>
+                    </li>
+                    <li class="media mt-5">
+                        <div class="media-body text-justify">
+                            <h5 class="mt-0 mb-1">P: Vocês enviam para todo o Brasil?</h5>
+                            Enviamos pra todo o Brasil a pronta entrega. Não trabalhamos com envios internacionais ou envios diretamente do fornecedor para o cliente, todos os produtos são enviados da coleção da The Collector Geek Store, não trabalhamos com marketplace. Embora o produto esteja conosco, não é possível retirar pessoalmente.
+                        </div>
+                        <img class="d-none d-md-block align-self-center ml-3 imgProfile rounded" src="../Images/Profile/06.jpg" alt="Generic placeholder image">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /jumbotron do Conteúdo de contato -->
+
+        <!-- Rodapé -->
+        <footer class="container-fluid rodape">
+            <div class="container pt-4">
+                <div class="row">
+                    <!-- Links do Rodapé -->
+                    <div class="col-3 col-sm-3 text-left">
+                        <span class="fonteCollector h5">LINKS ÚTEIS</span>
+                        <ul class="list-unstyled">
+                            <a href="../index.html"><li>Home</li></a>
+                            <a href="produtos.html"><li>Produtos</li></a>
+                            <a href="sobre.html"><li>Sobre</li></a>
+                            <a href="contato.html"><li>Atendimento</li></a>
+                        </ul>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-3 text-left">
+                        <span class="fonteCollector h5">MEIOS DE PAGAMENTO</span>
+                        <ul class="list-unstyled iconesPagamento">
+                            <li><i class="fa fa-cc-mastercard mr-3"></i><i class="fa fa-cc-amex mr-3"></i><i class="fa fa-cc-visa"></i></li>
+                            <li><i class="fa fa-cc-paypal mr-4"></i><i class="fa fa-money mr-4"></i><i class="fa fa-bitcoin"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /Links do Rodapé -->
+
+                    <!-- Input email Newsletter -->
+                    <div class="col-9 col-sm-12 order-sm-12 mt-sm-4">
+                        <div class="col-12 align-self-center">
+                            <span class="mx-lg-5">Cadastre-se e Receba nossa Newsletter!</span>
+                            <form class="form-inline pesquisar input-group">
+                                <input class="form-control ml-lg-5" type="email" placeholder="Digite seu Email" aria-label="Search">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-warning mr-lg-5" type="submit">Cadastrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>  
+                    <!-- /Input email Newsletter -->
+
+                    <!-- Mapa google Maps -->
+                    <div class="col-12 col-sm-7 col-lg-5 offset-sm-1 text-center order-sm-1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58944.1647945751!2d-47.44948942003531!3d-22.578718102485706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88055b6df0dc3%3A0x1b0ef5f339809ecd!2sLimeira%2C+SP!5e0!3m2!1spt-BR!2sbr!4v1539993080029" width="100%" style="border: solid dodgerblue 1px" allowfullscreen></iframe>
+                    </div>
+                    <!-- /Mapa google Maps -->
+
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- InfoLoja e Social Icons -->
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-8">
+                        <p class="text-center text-lg-left">TCGS - The Collector Geek Store - Venda de Colceionáveis | CNPJ: 00.000.000/0000-00
+                            <strong><small>Rua Evaristo Olivatto Filho, n°1377 Jardim Morro Branco - LOJA 1 - CEP 13483-200 - Limeira/SP</small></strong>
+                        </p>
+                    </div>
+                
+                    <!-- Social Icons -->
+                    <div class="col-lg-4 ml-lg-0">
+                        <div class="text-center text-lg-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-lg rgba-white-slight mx-1">
+                                    <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-lg rgba-white-slight mx-1">
+                                    <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-lg rgba-white-slight mx-1">
+                                    <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-lg rgba-white-slight mx-1">
+                                    <i class="fa fa-envelope"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>     
+                    </div> 
+                    <!-- /Social Icons -->
+
+                </div>
+            </div>
+            <!-- /InfoLoja e Social Icons -->
+
+        </footer>
+        <!-- /Rodapé -->
+    
+        <!-- JavaScript Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!-- Script Google API -->
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
